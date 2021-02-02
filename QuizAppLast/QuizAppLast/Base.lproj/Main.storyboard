@@ -141,8 +141,8 @@
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question mazafaka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpT-NY-yTE">
-                                <rect key="frame" x="105" y="433.5" width="204.5" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question hakumata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpT-NY-yTE">
+                                <rect key="frame" x="103" y="433.5" width="208" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -192,6 +192,12 @@
                                     <action selector="btn:" destination="sZ0-ur-QBn" eventType="touchUpInside" id="ciB-J1-y3N"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pM-ZN-3wZ">
+                                <rect key="frame" x="180" y="371" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JjE-Oi-ofo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -208,6 +214,9 @@
                             <constraint firstItem="rpT-NY-yTE" firstAttribute="centerX" secondItem="pqv-Hp-UH5" secondAttribute="centerX" id="ZUX-8d-SPd"/>
                             <constraint firstItem="r9l-oH-CH4" firstAttribute="leading" secondItem="JjE-Oi-ofo" secondAttribute="leading" constant="20" id="cUR-8L-QPJ"/>
                             <constraint firstItem="JjE-Oi-ofo" firstAttribute="trailing" secondItem="r9l-oH-CH4" secondAttribute="trailing" constant="20" id="dcc-Xu-NoD"/>
+                            <constraint firstItem="rpT-NY-yTE" firstAttribute="top" secondItem="8pM-ZN-3wZ" secondAttribute="bottom" constant="41.5" id="exZ-ih-P7A"/>
+                            <constraint firstItem="8pM-ZN-3wZ" firstAttribute="leading" secondItem="JjE-Oi-ofo" secondAttribute="leading" constant="180" id="heS-oJ-dmH"/>
+                            <constraint firstItem="JjE-Oi-ofo" firstAttribute="trailing" secondItem="8pM-ZN-3wZ" secondAttribute="trailing" constant="180" id="kaa-rm-RNH"/>
                             <constraint firstItem="JjE-Oi-ofo" firstAttribute="trailing" secondItem="Y5S-7h-cLh" secondAttribute="trailing" constant="20" id="lcX-Wx-6Xg"/>
                             <constraint firstItem="38v-ki-mZk" firstAttribute="leading" secondItem="JjE-Oi-ofo" secondAttribute="leading" constant="20" id="mlC-J7-OyN"/>
                             <constraint firstItem="sOZ-Ua-fwK" firstAttribute="leading" secondItem="JjE-Oi-ofo" secondAttribute="leading" id="r4Y-uR-ddO"/>
@@ -219,6 +228,7 @@
                         <outlet property="btnA" destination="Y5S-7h-cLh" id="dvp-ye-xZd"/>
                         <outlet property="btnB" destination="38v-ki-mZk" id="xm8-IA-t92"/>
                         <outlet property="btnC" destination="r9l-oH-CH4" id="bdN-Su-QAs"/>
+                        <outlet property="questionNumberLabel" destination="8pM-ZN-3wZ" id="tah-8I-AoN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kf-K1-FMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
